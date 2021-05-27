@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <table id="tabla">
+            <tr>
+                <td>
+                    <table id="tablaPrincipal">
+                        <tr id="fila">
+                            <td id="tdcelda1">
+                                <select name="cboColores" id="cboColores">
+                                    <option value="rojo" id="rojo">ROJO</option>
+                                    <option value="verde" id="verde">VERDE</option>
+                                    <option value="azul" id="azul">AZUL</option>
+                                    <option value="blanco" id="blanco">BLANCO</option>
+                                    <option value="negro" id="negro">NEGRO</option>
+                                </select>
+                            </td>
+                            <td id="tdcelda2">
+                                <select name="cboElementos" id="cboElementos">
+                                    <option value="tablaPrincipal" id="Principal">TABLA</option>
+                                    <option value="fila" id="fila">FILA</option>
+                                    <option value="tdcelda1" id="celda1">CELDA 1</option>
+                                    <option value="tdcelda2" id="celda2">CELDA 2</option>
+                                    <option value="contenedor" id="contenedor">DIV</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr id="tr2TablaPrincipal">
+                            <td colspan="2" id="tdcelda3">
+                                <div id="estiloBotones">
+                                    <input type="button" value="Aceptar" id="aceptar" onclick="CambiarColor()"
+                                        onmouseover="AumentarTamaño(this.id)" onmouseout="DisminuirTamaño(this.id)">
+                                    <input type="button" value="Reiniciar" id="reiniciar" onclick="Reiniciar()">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
