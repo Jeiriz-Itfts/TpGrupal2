@@ -22,25 +22,6 @@ function CambiarColor() {
     }
 
     var elemento = document.getElementById('cboElementos').value;
-
-    switch (true) {
-        case document.getElementById('tablaPrincipal').checked:
-            elemento = 'tablaPrincipal';
-            break;
-        case document.getElementById('fila').checked:
-            elemento = 'fila';
-            break;
-        case document.getElementById('celda1').checked:
-            elemento = 'tdcelda1';
-            break;
-        case document.getElementById('celda2').checked:
-            elemento = 'tdcelda2';
-            break;
-        case document.getElementById('contenedor').checked:
-            elemento = 'contenedor';
-            break;
-
-    }
     document.getElementById(elemento).style.backgroundColor = color;
 }
 
@@ -48,20 +29,12 @@ function Reiniciar() {
     location.reload();
 }
 
-window.onload = function () {
-    {
-        var boton = document.getElementById('aceptar');
+var boton = document.getElementById('aceptar'); /* Creo variable global para usar en ambas funciones */
+function AumentarTamaño() {
+    boton.style.fontSize = 'x-large';
+    boton.style.cursor = 'progress';
+}
 
-        boton.onmouseover = AumentarTamaño;
-        boton.onmouseout = DisminuirTamaño;
-    }
-
-    function AumentarTamaño() {
-        document.getElementById(this.id).style.fontSize = 'x-large';
-        document.getElementById(this.id).style.cursor = 'progress';
-    }
-
-    function DisminuirTamaño() {
-        document.getElementById(this.id).style.fontSize = 'small';
-    }
+function DisminuirTamaño() {
+    boton.style.fontSize = 'small';
 }

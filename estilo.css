@@ -5,16 +5,14 @@
 
 #contenedor {
     min-height: 650px; 
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    /* saco margenes ya que pide que el tamaño del contenedor sea el mismo que el de la tabla */
     background-color: gainsboro;
 }
 
 #tabla, td{
     height: 650px;
-    width: 1200px;
+    width: 100%; /* Esto permite que se centre y siga centrado por más que se cambie la resolucion */
 }
 
 #tablaPrincipal {   
@@ -56,7 +54,7 @@
 
 #aceptar {
     background-color: rgb(241, 218, 174);
-    border-radius: 11px;
+    border-radius: 20px; /* para que se parezca mas a la imagen */
     border-color: orange;
     width: 160px;
     color: rgba(100, 68, 26, 0.856);
@@ -67,7 +65,7 @@
 
 #reiniciar {
     background-color: rgb(241, 218, 174);
-    border-radius: 11px;
+    border-radius: 20px;
     border-color: orange;
     width: 160px;
     color: rgba(100, 68, 26, 0.856);

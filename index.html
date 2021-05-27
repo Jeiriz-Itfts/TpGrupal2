@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index.html</title>
     <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <script src="funciones.js"></script>
 </head>
 <body>
     <div id="contenedor">
@@ -37,8 +36,7 @@
                         <tr id="tr2TablaPrincipal">
                             <td colspan="2" id="tdcelda3">
                                 <div id="estiloBotones">
-                                    <input type="button" value="Aceptar" id="aceptar" onclick="CambiarColor()"
-                                        onmouseover="AumentarTamaño(this.id)" onmouseout="DisminuirTamaño(this.id)">
+                                    <input type="button" value="Aceptar" id="aceptar" onclick="CambiarColor()" onmouseover="AumentarTamaño()" onmouseout="DisminuirTamaño()">
                                     <input type="button" value="Reiniciar" id="reiniciar" onclick="Reiniciar()">
                                 </div>
                             </td>
@@ -48,5 +46,6 @@
             </tr>
         </table>
     </div>
+<script src="funciones.js"></script> <!-- Linkeo JS al final para que primero cargue toda la página -->
 </body>
 </html>
